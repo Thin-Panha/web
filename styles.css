@@ -1,0 +1,373 @@
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -10;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  margin: -8px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+  z-index: 100000;
+  background-attachment: scroll;
+  overflow: hidden;
+  position: fixed;
+}
+
+header .logo img {
+  width: 80px;
+  height: 80px;
+}
+header .o {
+  justify-items: center;
+  margin-left: 230px;
+  width: 1000px;
+  display: flex;
+  margin-right: 10px;
+}
+header nav {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+header nav p {
+  color: #007bff;
+  font-weight: bold;
+}
+header nav a {
+  display: flex;
+  margin: 0 15px;
+  padding: 10px 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  height: 40px;
+  border-radius: 8px;
+  align-items: center;
+  background-color: #0b3ab8;
+  color: #eff1f2;
+}
+
+.content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+.not {
+  height: 800px;
+}
+.trends-section {
+  margin: 0;
+  padding: 20px;
+  height: 450px;
+  background-color: #f8f9fa;
+  text-align: left;
+  cursor: pointer;
+}
+
+.trends-section h2 {
+  color: #007bff;
+  font-size: 1.5em;
+  z-index: 100;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.trends-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.trend-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+.trend-card:hover {
+  border-radius: 8px;
+  width: 300px;
+  align-items: center;
+  background-color: #e4e5e9;
+}
+.trend-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.trend-card h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 15px 0 10px;
+  padding: 0 10px;
+}
+
+.trend-card p {
+  font-size: 0.9em;
+  color: #555;
+  padding: 0 15px 15px;
+  margin: 0;
+}
+
+.emerging-threats-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.threats-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.threats-image img {
+  margin: 50px;
+  width: 650px;
+  height: 350px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.threats-list {
+  margin-left: -60px;
+  flex: 1;
+  width: 800px;
+}
+
+.threat-item {
+  margin-top: 20px;
+  display: flex;
+  margin: 30px;
+}
+.threat-item img {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  margin-right: 30px;
+  margin-left: 40px;
+}
+
+.threat-item h3 {
+  color: #000;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.threat-item p {
+  color: #555;
+  font-size: 0.9em;
+  margin: 5px 0 0;
+  width: 500px;
+}
+.technological-section {
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: left;
+}
+.technological-section h2 {
+  color: #007bff;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.technological-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.technological-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.technological-card:hover {
+  border-radius: 8px;
+  width: 350px;
+  align-items: center;
+  background-color: #e4e5e9;
+}
+.technological-card a {
+  width: 350px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.technological-card img {
+  width: 70px;
+  height: 70px;
+  margin-top: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.technological-card h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 15px 0 10px;
+  padding: 0 10px;
+}
+
+.technological-card p {
+  font-size: 0.9em;
+  color: #555;
+  padding: 0 15px 15px;
+  margin: 0;
+}
+
+.Upcoming-section {
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: left;
+}
+
+.Upcoming-section h2 {
+  color: #007bff;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.Upcoming-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.Upcoming-2-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  height: 250px;
+  margin-right: 5px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+}
+.Upcoming-2-card img {
+  width: 350px;
+}
+.Upcoming-2-card-t {
+  width: 700px;
+  margin: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+.Upcoming-2-card-t h3 {
+  height: 20px;
+  width: 100%;
+  align-items: left;
+  text-align: left;
+}
+
+.Upcoming-2-card-t p {
+  margin: 0px;
+  text-align: left;
+}
+
+.Contect-section {
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: left;
+}
+.Contect-section h2 {
+  color: #007bff;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.Contect-section iframe {
+  width: 100%;
+  height: 80vh;
+  left: 0;
+}
+.Contect-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
